@@ -3,36 +3,25 @@ from tkinter import *
 import math 
 from math import *
  
-# used to switch between units of rad, and deg
-convert_constant = 1
-inverse_convert_constant = 1
- 
 btn_params = {'padx': 16, 'pady': 1, 'bd': 4, 'fg': 'white', 'bg': 'black', 'font': ('arial', 18),
               'width': 2, 'height': 2, 'relief': 'flat', 'activebackground': "black"}
+
 def log10(arg):
-    return math.log(arg*convert_constant,10)
+    return math.log(arg,10)
 def ln(arg):
-    return math.log(arg*convert_constant)
+    return math.log(arg)
+
 def sine(arg):
-    return sin(arg * convert_constant)
- 
- 
+    return sin(arg * convert_constant) 
 def cosine(arg):
     return cos(arg * convert_constant)
- 
- 
 def tangent(arg):
-    return tan(arg * convert_constant)
- 
- 
+    return tan(arg * convert_constant) 
+
 def sininv(arg):
     return inverse_convert_constant * (asin(arg))
- 
- 
 def cosinv(arg):
     return inverse_convert_constant * (acos(arg))
- 
- 
 def taninv(arg):
     return inverse_convert_constant * (atan(arg))
  
