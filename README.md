@@ -1,1 +1,1 @@
-# Programming-For-Problem-Solving
+# WISE Project
